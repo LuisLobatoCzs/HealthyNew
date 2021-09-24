@@ -48,7 +48,7 @@
                                     Apellidos (obligatorio)
                                 </b>
                             </div>
-                            <input name="last-name" id="last-name" type="text" class="form-control col-md-10 col-sm-10 col-11">
+                            <input name="last_name" id="last_name" type="text" class="form-control col-md-10 col-sm-10 col-11">
                         </div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                             Ingresa tu número de teléfono                        
                         </b>
                     </div>
-                    <select name="phone-code" id="phone-code" class="col-md-2 col-3 form-control">
+                    <select name="phone_code" id="phone_code" class="col-md-2 col-3 form-control">
                         <option value="">+52</option>
                     </select>
                     <input name="phone" id="phone" type="text" class="form-control col-md-6 col-8" placeholder="Número de teléfono">
@@ -87,7 +87,7 @@
                             Ingresa tu contraseña (obligatorio)                        
                         </b>
                     </div>
-                    <input name="password" id="password" type="text" class="form-control col-md-8 col-11" placeholder="Contraseña">
+                    <input name="password" id="password" type="password" class="form-control col-md-8 col-11" placeholder="Contraseña">
                     <object width="15vh" style="position:relative; left: -40px;" data="{{ asset('img/formularios/candado.svg') }}" type="image/svg+xml">
                     </object>
                 </div>

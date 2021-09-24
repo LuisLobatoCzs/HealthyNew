@@ -49,13 +49,13 @@ Route::get('/registro-especialista', function () {
 
 Route::get('/perfil-usuario', function () {
     return view('perfilUsuario');
-});
+})->name('userhome');;
 
 Route::get('/perfil-especialista', function () {
     return view('perfilEspecialista');
 });
 
-Route::post('/registrar-usuario', "auth\RegisterController@registroUsuario");
+Route::post('/registrar-usuario', "NewController@registroUsuario");
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

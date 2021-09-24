@@ -58,31 +58,67 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto pt-5 pb-0">
-                        <li class="nav-item">   
-                            <a class="nav-link cabecera" href="/nosotros"><h5><b>Nosotros</b> <span class="not_priority">|</span> </h5></a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link cabecera" href="/usuarios"><h5><b>Usuario</b> <span class="not_priority">|</span> </h5></a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link cabecera" href="/especialista"><h5><b>Especialista</b> <span class="not_priority">|</span> </h5></a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link cabecera" href="/seguridad"><h5><b>Seguridad</b> <span class="not_priority">|</span> </h5></a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link cabecera" href="/ayuda"><h5><b>Ayuda</b> </h5></a>
-                        </li>
+                        <!-- Authentication Links -->
+                        @guest
+                            <li class="nav-item">   
+                                <a class="nav-link cabecera" href="/nosotros"><h5><b>Nosotros</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/usuarios"><h5><b>Usuario</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/especialista"><h5><b>Especialista</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/seguridad"><h5><b>Seguridad</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/ayuda"><h5><b>Ayuda</b> </h5></a>
+                            </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link cabecera" href="/login">
-                                <button class="button1"> &nbsp;&nbsp; Iniciar Sesión &nbsp;&nbsp; </button>
-                            </a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/login">
+                                    <button class="button1"> &nbsp;&nbsp; Iniciar Sesión &nbsp;&nbsp; </button>
+                                </a>
+                            </li>
+                        @else
+
+                            <li class="nav-item">   
+                                <a class="nav-link cabecera" href="/nosotros"><h5><b>Nosotros</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/usuarios"><h5><b>Usuario</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/especialista"><h5><b>Especialista</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/seguridad"><h5><b>Seguridad</b> <span class="not_priority">|</span> </h5></a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link cabecera" href="/ayuda"><h5><b>Ayuda</b> </h5></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                    <button class="button1"> &nbsp;&nbsp; Cerrar Sesión &nbsp;&nbsp; </button>
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </li>
+
+                        @endguest
                     </ul>
                 </div>
             </div>

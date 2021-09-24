@@ -26,7 +26,7 @@
             <div class="row pb-5 centerY">
                 <!-- Nombre -->
                 <div class="col-md-3 col-sm-6 col-5 centrar">
-                    Nombre y apellidos
+                   {{ Auth::user()->name }} {{ Auth::user()->last_name }}
                 </div>
                 <!-- Edad -->
                 <div class="col-md-3 col-sm-6 col-5 atras">
@@ -84,10 +84,11 @@
                 </div>
             </div>
 
+            <!--
             <div class="row p-2 justify-content-center">
                 <a href="/"><h3 class="colorTexto4">Cerrar Sesión</h3></a>
             </div>
-
+            -->
             <br><br><br>
 
             
