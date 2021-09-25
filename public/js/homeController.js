@@ -91,6 +91,90 @@ var app = angular.module("home", [])
                 $scope.selectorPUR();
                 $scope.pu14 = true;
                 break;
+            case 15:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 16:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 17:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 18:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 19:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 20:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 21:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 22:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 23:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 24:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 25:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 26:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 27:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 28:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
         }
     }
 
@@ -171,6 +255,78 @@ var app = angular.module("home", [])
             case 12:
                 $scope.selectorPER();
                 $scope.pe12 = true;
+                break;
+            case 13:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 14:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 15:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 16:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 17:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 18:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 19:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 20:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+            break;
+            case 21:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+            break;
+            case 22:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 23:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
+                break;
+            case 24:
+                Swal.fire(
+                    'Pregunta?',
+                    'Respuesta',
+                );
                 break;
         }
     }
