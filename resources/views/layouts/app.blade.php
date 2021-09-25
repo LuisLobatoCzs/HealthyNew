@@ -158,7 +158,7 @@
                         <div class="col-md-4 col-sm-4 col-6 size5">
                             Especialistas
                                 <dl class="size6">
-                                    <dd> <a href="/ayuda#especialistas" class="pie"> Requisitos para realizar consultas en Health& </a> </dd>
+                                    <dd> <a href="#" ng-click="selectorPE(13)" class="pie"> Requisitos para realizar consultas en Health& </a> </dd>
                                     <dd> <a href="/especialista#beneficios" class="pie"> Ganancias con Health& </a> </dd>
                                 </dl>
                         </div>
