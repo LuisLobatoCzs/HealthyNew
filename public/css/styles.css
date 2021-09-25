@@ -293,3 +293,14 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 414px) and (min-width: 0px) {
+    .not_priority2 {
+        display:none;
+    }
+}
+@media screen and (min-width: 415px) {
+    .aux2 {
+        display:none;
+    }
+}

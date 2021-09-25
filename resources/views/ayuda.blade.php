@@ -3,6 +3,8 @@
 @section('content')
 <div class="bg-index" ng-init="hello()">
 
+<!-- Contenido para computadoras -->
+<div class="d-none d-sm-none d-md-block">
     <div class="col-12">
         <!-- Título -->
         <div class="row justify-content-center pt-5 pb-5 cabecera">
@@ -459,11 +461,69 @@
                         </div>
                     </div>
                     <!-- Fin PE12 -->
-                    
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+<!-- Smartpphone y tablets -->
+<div class="d-block d-sm-block d-md-none">
+<div class="col-12">
+        <!-- Título -->
+        <div class="row justify-content-center pt-5 pb-5 cabecera">
+            <h2> <b> Repondemos tus dudas </b> </h2>
         </div>
 
+        <!-- Usuarios Cuadro Azul -->
+        <div class="row cuadro1 pl-5 pr-5 pt-2 pb-2" id="usuarios">
+            <div class="col-md-6 col-sm-6 col-5">
+                <b class="size4 cabecera"> Usuarios: </b>
+                <br>
+                <dl class="size5">
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(15)"> ¿Cómo me registro para ser usuario? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(2)"> ¿Cómo puedo cambiar la informacion en mi perfil? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(3)"> ¿Cómo agrego un contacto de emergencía? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(4)"> ¿Se realiza algún cargo de Pre-autorización? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(5)"> ¿Qué métodos de pago son aceptados en Health&? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(6)"> ¿Cómo se realiza el cobro del servicio? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(7)"> ¿Puedo programar una cita con algún especialista? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(8)"> ¿Puedo dar propinas? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(9)"> ¿Cómo solicito un servicio de algun especialista? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(10)"> ¿Cómo puedo identificar a mi especialista? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(11)"> ¿Qué debo hacer si se realizo un cobro sin recibir el servicio? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(12)"> ¿Cuenta con tarifa dinamica? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(13)"> ¿Puedo pedir Health& para algún conocido o familiar? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPU(14)"> ¿Qué hacer en caso de emergencia? </a> </dd>
+                </dl>
+            </div>
+        </div>
 
+        <!-- Especialistas-->
+        <div class="row p-5" id="especialistas">
+            <div class="col-6">
+                <b class="size4 cabecera"> Especialistas: </b>
+                <br>
+                <dl class="size5">
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(13)"> ¿Qué documentos necesito para convertirme en especialista de Health&? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(2)"> ¿Qué áreas de especialistas se encuentran disponibles? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(3)"> Tengo una discapacidad ¿Puedo usar Health&? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(4)"> Tengo problemas con el registro </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(5)"> ¿Cómo se calculan las tarifas en Health&? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(6)"> No puedo terminar el servicio </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(7)"> ¿Cómo acepto una consulta? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(8)"> ¿Cómo puedo identificar a mi usuario cuando me encuentre en el domicilio? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(9)"> ¿Dónde puedo encontrar mi historial de consultas? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(10)"> Tuve una mala experiencia en una consulta </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(11)"> ¿Qué debo hacer en caso de emergencía? </a> </dd>
+                    <dd> <a href="" class="resaltado" ng-click="selectorPE(12)"> ¿Cómo agrego un contacto de emergencía? </a> </dd>
+                </dl>
+            </div>
+        </div>
     </div>
+</div>
+
+
 </div>
 @endsection
