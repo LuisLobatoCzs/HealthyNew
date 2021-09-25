@@ -2,22 +2,37 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+    <div class="row justify-content-center p-5">
+        <div class="col-12">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header">{{ __('Panel Administrativo') }}</div>
 
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+                <div class="">
 
-                    {{ __('You are logged in!') }}
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead class="thead">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Cédula</th>
+                                    <th>Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Especialista que solicita</td>
+                                    <td>0123456789</td>
+                                    <td><Button class="btn btn-success"> Aprobar </Button> <button class="btn btn-danger"> Denegar </button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
 </div>
 @endsection
